@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I Love You Abbu ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(#350000, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  animation: glow 2s infinite alternate;
+}
+
+.heart {
+  font-size: 300px;
+  line-height: 1;
+  filter: drop-shadow(0 0 25px red);
+  animation: beat 1s infinite;
+}
+
+.crown {
+  font-size: 65px;
+  position: absolute;
+  top: -50px;
+  left: 5px;
+  z-index: 2;
+}
+
+.message {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 0 0 15px red;
+}
+
+.message span {
+  color: gold;
+  font-size: 55px;
+}
+
+.rose {
+  font-size: 75px;
+  margin-top: -35px;
+  animation: beat 2s infinite;
+}
+
+.floating {
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  animation: float 4s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.12); }
+}
+
+@keyframes float {
+  0% { transform: translateY(100px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-250px); opacity: 0; }
+}
+
+@keyframes glow {
+  from { filter: brightness(0.8); }
+  to { filter: brightness(1.4); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating" style="left:10%">❤️</div>
+<div class="floating" style="left:80%;animation-delay:1s">❤️</div>
+<div class="floating" style="left:30%;animation-delay:2s">✨</div>
+<div class="floating" style="left:65%;animation-delay:1.5s">💖</div>
+
+<div class="card">
+  <div class="crown">👑</div>
+
+  <div class="heart">❤️</div>
+
+  <div class="message">
+    I Love You
+    <br>
+    <span>Abbu ❤️</span>
+  </div>
+
+  <div class="rose">🌹</div>
+</div>
+
+</body>
+</html>
